@@ -1,14 +1,17 @@
 
+import { useContext } from 'react';
 import './App.css';
-import Header from './Components/Header/Header';
-import Shop from './Components/Shop/Shop';
-
+import { UserContext } from './contextsApi/Context';
 
 function App() {
+
+  const {me} = useContext(UserContext);
+  console.log(me)
   return (
-    <div>
-     <Header></Header>
-     <Shop></Shop>
+    <div className="App">
+      
+      <h1>this is bipul hossain</h1>
+    
     </div>
   );
 }
